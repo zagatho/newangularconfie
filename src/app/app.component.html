@@ -1,0 +1,101 @@
+<form class="wide" #paymentInfoForm="ngForm" >
+
+    <mat-card multi="true" class="color">
+        <div fxFlex fxLayout="row">
+            <!-- Row 1 -->
+            <div>
+              Down Payment Amount:
+            </div>
+            <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="10px">
+                <div fxFlex="20" fxLayoutAlign="start start" >
+
+                    <mat-checkbox >
+                        <div>102.50</div>
+                        <div >Full Premium</div>
+                    </mat-checkbox>
+                </div>
+                <div fxFlex="20" fxLayoutAlign="start start" >
+                    <mat-checkbox >
+                        <div>75.50</div>
+                        <div>Minimum</div>
+                    </mat-checkbox>
+                </div>
+                <div fxFlex="20" fxLayoutAlign="start start" >
+                  <div fxFlex="100%">
+                    <div>
+                    <mat-checkbox > 
+                       </mat-checkbox>
+                    </div>
+                    <div>
+                    <label class="mr-5">$</label>
+                      <mat-form-field>
+                        <input matInput placeholder="Custom Amount" type="number" 
+                        name="amount">
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxFlex="40" fxLayoutAlign="start start" >
+                  </div>
+            
+                </div>
+            </div>
+            <br />
+            <br />
+            <!-- Row 2 -->
+            <div fxLayout="column">
+            <div>
+                Payment method:
+            </div>
+            <div >
+                <mat-radio-group  name="paymentM" fxLayout="column wrap" fxLayout.gt-sm="row" fxLayoutGap="10px">
+                  <div fxFlex fxLayoutAlign="start end">
+                    <mat-radio-button >Payment1
+                    </mat-radio-button>
+                  </div>
+                  <div fxFlex fxLayoutAlign="start end">
+                     <mat-radio-button >Payment2
+                    </mat-radio-button>
+                  </div>
+                  <div fxFlex fxLayoutAlign="start end">
+                     <mat-radio-button >Payment3
+                    </mat-radio-button>
+                  </div>
+                </mat-radio-group>
+            </div>
+
+            <!-- Row 3 (credit card) -->
+            <div fxLayout="column" fxLayout.gt-sm="row">
+                <app-credit-card [parentForm]="paymentInfoForm" fxFlex="400px" >
+                </app-credit-card>
+            </div>
+            <!-- row 4 (label)-->
+            <div class="text-center mt-20">
+                No payment required for this change
+            </div>
+            <!-- row 5 (returned premium) -->
+            <div class="mt-20 text-center">
+                <div style="white-space: nowrap; display: inline-block;">
+                    <label class="mr-5">$</label>
+                    <mat-form-field>
+                        <input matInput type="number" readonly>
+                    </mat-form-field>
+                </div>
+                <label> Returned premium </label>
+            </div>
+            </div>
+
+        </div>
+
+
+    </mat-card>
+
+    <div class="mt-10" style="float: right">
+        <button mat-raised-button type="button"
+            style="margin-right: 15px;">
+            Cancel
+        </button>
+        <button mat-raised-button type="submit" color="secondary" >
+            <span>Issue</span>
+        </button>
+    </div>
+</form>

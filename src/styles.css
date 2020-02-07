@@ -1,0 +1,398 @@
+/* Add application styles & imports to this file! */
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/* Rules for sizing the icon. */
+
+.material-icons.md-12 {
+    font-size: 10px;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+
+/* Rules for using icons as black on a light background. */
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+
+/* Rules for using icons as white on a dark background. */
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-ok {
+    background-color: #43A047;
+    color: white;
+}
+
+.bluefireSuccessColor {
+    color: #0069a6;
+    border: none;
+}
+
+.bluefireSuccessColor:hover {
+    color: #63b8e8;
+    border: none;
+}
+
+.form-container {
+    padding: 8px;
+}
+
+.container {
+    position: relative;
+    min-height: 200px;
+}
+
+.table-container {
+    position: relative;
+    max-height: 600px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+}
+
+.wide {
+    width: 100%
+}
+
+.bluefireColor {
+    background-color: #1c81a5 !important;
+}
+
+.whiteLabels {
+    color: aliceblue !important;
+    font-family: Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+.loading-shade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-nav {
+    background-color: #f3f3f3;
+    margin-bottom: 15px;
+}
+
+
+/* ------ This clases we are overwriting of the original angular material, this is becouse we are setting the blueFire volor -----*/
+
+
+/* Radio button background */
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle,
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+.mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+    background-color: #1c81a5 !important;
+}
+
+
+/* Radio button border */
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color: #1c81a5 !important;
+}
+
+
+/* Toggle background bar */
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: rgba(0, 0, 0, .38);
+}
+
+
+/* Toggle dot / circle */
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: #1c81a5;
+}
+
+.delete-tap-icon {
+    color: #ef1515;
+    margin-left: 15px;
+}
+
+.icon-white {
+    color: #fafafa;
+}
+
+
+/* classes to use flexbox  */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-row-wrap>div {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+
+/* classes to handle margin */
+
+.m-auto {
+    margin: auto;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+
+/* classes to handle text alignment*/
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/* Display inline */
+
+.d-inline {
+    display: inline;
+}
+
+.validator {
+    font-size: 11px;
+    color: red;
+    display: inline-block;
+}
+
+.backgroundColor {
+    background: #cfcfcf;
+    box-shadow: none !important;
+}
+
+.whiteColor {
+    background: white;
+}
+
+.mat-card {
+    border-radius: 15px !important;
+}
+
+body {
+    background: #cfcfcf;
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.floatClass {
+    background-color: #0069a6 !important;
+    color: #ffffff;
+}
+
+.floatContainer {
+    position: fixed !important;
+    z-index: 2;
+    right: 45px !important;
+}
+
+.floatClass:hover {
+    background-color: #63b8e8 !important;
+    color: #ffffff;
+}
+
+.right-aligned-header>.mat-content {
+    justify-content: space-between;
+}
+
+.mat-content>mat-panel-title,
+.mat-content>mat-panel-description {
+    flex: 0 0 auto;
+}
+
+.searchButton {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.searchButton:hover {
+    background-color: #e9e9e9;
+    color: #000;
+}
+
+mat-step-header[ng-reflect-active="false"] {
+    cursor: default;
+}
+
+@media (max-width: 1060px) {
+    .mat-step-label {
+        display: none !important;
+    }
+}
+
+
+/* Custom variables */
+
+.mat-secondary {
+    background-color: #71caf7 !important;
+    color: #ffffff;
+}
+
+.mat-secondary:hover {
+    background-color: #52b6f0 !important;
+    color: #ffffff;
+}
+
+.mat-secondary[disabled] {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+
+/* ************************************************ FLOAT ACTION BUTTONS************************************************************ */
+
+.floatButton {
+    background-color: #0069a6 !important;
+    border-radius: 50px !important;
+    color: #fff;
+    transition: width 0.250s !important;
+}
+
+.floatButton:hover {
+    background-color: #63b8e8 !important;
+    width: 110px;
+}
+
+.floatButton:hover:after {
+    content: attr(data-hover);
+    padding: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: 1s opc forwards;
+}
+
+.actionButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+@keyframes opc {
+    from{
+        opacity:0;
+      }
+      to{
+        opacity:1;
+      }
+}
+
+.title {
+    font-weight: bold;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    text-transform: uppercase;
+    font-size: 24px !important;
+}
+
+app-quote-vehicles .mat-tab-labels :last-child.mat-tab-label {
+    min-width: 0;
+    padding: 0 12px;
+    color: unset;
+    opacity: unset;
+}

@@ -1,0 +1,48 @@
+<div>
+  <div>
+    <mat-form-field class="fullInput">
+      <input matInput placeholder="Name on Card" name="cardName"
+        required maxlength="100">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field class="fullInput">
+      <input matInput placeholder="Card number" 
+        required name="cardNumberName">
+      <mat-hint align="start">visa</mat-hint>
+      <mat-hint align="end">
+        <span >
+          Valid
+        </span>
+      </mat-hint>
+    </mat-form-field>
+  </div>
+
+  <div class="flexContainer">
+    <mat-form-field class="dataInput">
+      <input matInput placeholder="MM" required maxlength="2" pattern="^[0-9]+$" name="month" >
+    </mat-form-field>
+    <p>/</p>
+    <mat-form-field class="dataInput">
+      <input matInput placeholder="YY"  maxlength="2" required
+        pattern="^[0-9]+$" name="year2">
+    </mat-form-field>
+
+    <mat-form-field class="dataInput">
+      <input matInput placeholder="CVV" maxlength="3" required
+        pattern="^[0-9]+$" name="cvv2">
+    </mat-form-field>
+  </div>
+
+  <div class="flexContainer">
+    <mat-form-field class="address">
+      <input matInput placeholder="Street Address"  name="street" required
+        maxlength="100" >
+    </mat-form-field>
+    <mat-form-field class="zip">
+      <input matInput placeholder="Zip Code" required maxlength="5" pattern="^[0-9]+$">
+    </mat-form-field>
+
+  </div>
+</div>

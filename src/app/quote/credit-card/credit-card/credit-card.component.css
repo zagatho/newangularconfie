@@ -1,0 +1,29 @@
+.inline-input {
+    margin: auto;
+    width: 50%;
+}
+
+.inline-input>* {
+    margin-left: 5px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataInput {
+    width: 30%;
+}
+
+.fullInput {
+    width: 100%;
+}
+
+.address {
+    width: 67%;
+}
+
+.zip {
+    width: 30%;
+}
